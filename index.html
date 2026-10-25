@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanuj Chandra | Senior DevSecOps Engineer & Cloud Security Architect (12+ Yrs)</title>
+  <meta name="description" content="Official 3D interactive portfolio of Tanuj Chandra, Senior DevSecOps Engineer and Cloud Security Architect with 12+ years of experience in Zero-Trust, Kubernetes Defense, and Shift-Left Pipeline Security.">
+  <meta name="keywords" content="DevSecOps, Cloud Security, Kubernetes, AWS, Terraform, Zero-Trust, Tanuj Chandra, Shift-Left, CI/CD, Cyber Security">
+  <meta name="author" content="Tanuj Chandra">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tanuj Chandra | 3D DevSecOps Command Center">
+  <meta property="og:description" content="12+ Years Enterprise DevSecOps, Cloud Security Architecture & Zero-Trust Engineering.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyber-theme">
+  <!-- 3D Canvas Background -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Ambient Audio & Scanline Overlay -->
+  <div class="scanlines" id="scanlines-overlay"></div>
+  <div class="cyber-vignette"></div>
+
+  <!-- HUD Header Navigation -->
+  <header class="hud-header" id="hud-header">
+    <div class="hud-branding">
+      <div class="logo-glitch-wrapper">
+        <span class="logo-symbol"><i class="fa-solid fa-shield-halved"></i></span>
+        <div class="logo-text">
+          <span class="logo-title">TANUJ CHANDRA</span>
+          <span class="logo-subtitle">DEVSECOPS ARCHITECT // 12+ YRS</span>
+        </div>
+      </div>
+      <div class="security-pulse">
+        <span class="pulse-indicator"></span>
+        <span class="pulse-label">ZERO-TRUST ACTIVE</span>
+      </div>
+    </div>
+
+    <nav class="hud-nav" id="hud-nav">
+      <a href="#overview" class="nav-link active" id="nav-overview"><i class="fa-solid fa-terminal"></i> OVERVIEW</a>
+      <a href="#pipeline" class="nav-link" id="nav-pipeline"><i class="fa-solid fa-code-fork"></i> 3D PIPELINE</a>
+      <a href="#arsenal" class="nav-link" id="nav-arsenal"><i class="fa-solid fa-microchip"></i> TECH ARSENAL</a>
+      <a href="#experience" class="nav-link" id="nav-experience"><i class="fa-solid fa-timeline"></i> 12Y ROADMAP</a>
+      <a href="#terminal-section" class="nav-link" id="nav-terminal"><i class="fa-solid fa-square-binary"></i> SEC_CONSOLE</a>
+      <a href="#contact" class="nav-link" id="nav-contact"><i class="fa-solid fa-satellite-dish"></i> CONNECT</a>
+    </nav>
+
+    <div class="hud-actions">
+      <button class="sound-toggle-btn" id="sound-toggle" title="Toggle Synthesizer Audio Feedback">
+        <i class="fa-solid fa-volume-high" id="sound-icon"></i>
+      </button>
+      <a href="https://github.com/tanujchandra" target="_blank" rel="noopener noreferrer" class="hud-github-btn" id="github-profile-link">
+        <i class="fa-brands fa-github"></i> <span>GITHUB</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main HUD Content Container -->
+  <main class="hud-main" id="hud-main">
+
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="overview">
+      <div class="hero-split-container">
+        <!-- Left Column: Content & Metrics -->
+        <div class="hero-content">
+          <div class="cyber-badge" id="hero-badge">
+            <i class="fa-solid fa-lock"></i>
+            <span>DEFENSE IN DEPTH // LEVEL 01 ACTIVE</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-main-title">
+            Architecting <span class="gradient-text">Zero-Trust Cloud</span> & Hardened <span class="accent-cyan">DevSecOps</span> Ecosystems
+          </h1>
+
+          <p class="hero-description" id="hero-description">
+            12+ years pioneering enterprise cloud engineering, multi-tenant Kubernetes defense, automated policy-as-code, and resilient software supply chains (SLSA Level 3+). Bridging Development, SRE, and SecOps to eliminate vulnerabilities before production.
+          </p>
+
+          <!-- Live Telemetry KPI Cards -->
+          <div class="kpi-grid" id="kpi-grid">
+            <div class="kpi-card" data-tilt>
+              <div class="kpi-value"><span class="counter" data-target="12">12</span>+</div>
+              <div class="kpi-label">Years Enterprise Experience</div>
+              <div class="kpi-sub">DevOps & Cloud Sec</div>
+            </div>
+            <div class="kpi-card" data-tilt>
+              <div class="kpi-value"><span class="counter" data-target="500">500</span>+</div>
+              <div class="kpi-label">Microservices Guarded</div>
+              <div class="kpi-sub">Automated Gates</div>
+            </div>
+            <div class="kpi-card" data-tilt>
+              <div class="kpi-value">99.99%</div>
+              <div class="kpi-label">Target Infrastructure SLA</div>
+              <div class="kpi-sub">Zero-Drift GitOps</div>
+            </div>
+            <div class="kpi-card" data-tilt>
+              <div class="kpi-value highlight-cyan">ZERO</div>
+              <div class="kpi-label">Supply Chain Breaches</div>
+              <div class="kpi-sub">Cryptographic Signing</div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#pipeline" class="cyber-btn primary-btn" id="explore-3d-pipeline-btn">
+              <i class="fa-solid fa-cubes"></i> EXPLORE 3D PIPELINE
+            </a>
+            <button class="cyber-btn secondary-btn" id="run-live-scan-btn">
+              <i class="fa-solid fa-shield-virus"></i> RUN SECURITY AUDIT
+            </button>
+            <a href="https://www.linkedin.com/in/tanujchandra" target="_blank" rel="noopener noreferrer" class="cyber-btn glass-btn" id="hero-linkedin-btn">
+              <i class="fa-brands fa-linkedin"></i> LINKEDIN
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive 3D Holographic Stage -->
+        <div class="hero-3d-stage" id="hero-3d-stage">
+          <div class="stage-hologram-card">
+            <div class="stage-corner tl"></div>
+            <div class="stage-corner tr"></div>
+            <div class="stage-corner bl"></div>
+            <div class="stage-corner br"></div>
+            <div class="stage-laser-sweep"></div>
+
+            <div class="stage-header">
+              <div class="stage-live-badge"><span class="live-dot"></span> 3D SECURITY CORE</div>
+              <div class="stage-mode">WEBGL // 60 FPS</div>
+            </div>
+
+            <div class="floating-telemetry-tag tag-tl">
+              <i class="fa-solid fa-shield-halved"></i> ZERO-TRUST ACTIVE
+            </div>
+            <div class="floating-telemetry-tag tag-tr">
+              <i class="fa-brands fa-aws"></i> MULTI-CLOUD HARDENED
+            </div>
+            <div class="floating-telemetry-tag tag-bl">
+              <i class="fa-solid fa-dharmachakra"></i> K8S CKS DEFENSE
+            </div>
+            <div class="floating-telemetry-tag tag-br">
+              <i class="fa-solid fa-radar"></i> eBPF KERNEL LIVE
+            </div>
+
+            <!-- Central Hologram Target Focus Circle -->
+            <div class="hologram-target-circle">
+              <div class="target-crosshair ch-x"></div>
+              <div class="target-crosshair ch-y"></div>
+              <div class="target-ring-radar"></div>
+            </div>
+
+            <div class="stage-footer">
+              <span class="stage-prompt"><i class="fa-solid fa-arrows-up-down-left-right"></i> CLICK &amp; DRAG TO ROTATE 3D CORE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Scene Orbital Jump Controls Bar -->
+      <div class="scene-hud-controls" id="scene-controls">
+        <span class="scene-hint"><i class="fa-solid fa-satellite"></i> Focus Orbital Domain:</span>
+        <div class="orbital-jump-pills">
+          <button class="node-pill active" data-node="all"><i class="fa-solid fa-expand"></i> All Orbitals</button>
+          <button class="node-pill" data-node="cloud"><i class="fa-brands fa-aws"></i> Cloud Core</button>
+          <button class="node-pill" data-node="k8s"><i class="fa-solid fa-dharmachakra"></i> Kubernetes</button>
+          <button class="node-pill" data-node="pipeline"><i class="fa-solid fa-code-merge"></i> CI/CD</button>
+          <button class="node-pill" data-node="policy"><i class="fa-solid fa-scale-balanced"></i> Policy</button>
+          <button class="node-pill" data-node="runtime"><i class="fa-solid fa-radar"></i> eBPF Runtime</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE 3D DEVSECOPS PIPELINE SECTION -->
+    <section class="section pipeline-section" id="pipeline">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-network-wired"></i> SECURE SUPPLY CHAIN</div>
+        <h2 class="section-title">Automated Shift-Left Pipeline Lifecycle</h2>
+        <p class="section-sub">Click any pipeline node to inspect real-time security gate telemetry, scanning controls, and tooling.</p>
+      </div>
+
+      <div class="pipeline-board" id="pipeline-board">
+        <!-- Stage 1 -->
+        <div class="pipeline-node active" data-stage="1" id="pipe-stage-1">
+          <div class="node-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="node-title">1. Code & Commit</div>
+          <div class="node-tools">Gitleaks • Semgrep • Pre-commit</div>
+          <div class="node-status"><span class="badge-tag pass">GATE: PASSED</span></div>
+        </div>
+
+        <div class="pipeline-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- Stage 2 -->
+        <div class="pipeline-node" data-stage="2" id="pipe-stage-2">
+          <div class="node-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="node-title">2. SAST & SCA</div>
+          <div class="node-tools">SonarQube • Snyk • Dependency-Track</div>
+          <div class="node-status"><span class="badge-tag pass">GATE: PASSED</span></div>
+        </div>
+
+        <div class="pipeline-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- Stage 3 -->
+        <div class="pipeline-node" data-stage="3" id="pipe-stage-3">
+          <div class="node-icon"><i class="fa-solid fa-box-archive"></i></div>
+          <div class="node-title">3. Build & SBOM</div>
+          <div class="node-tools">Trivy • Syft • Cosign / Sigstore</div>
+          <div class="node-status"><span class="badge-tag pass">SLSA LVL 3</span></div>
+        </div>
+
+        <div class="pipeline-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- Stage 4 -->
+        <div class="pipeline-node" data-stage="4" id="pipe-stage-4">
+          <div class="node-icon"><i class="fa-solid fa-file-shield"></i></div>
+          <div class="node-title">4. Policy as Code</div>
+          <div class="node-tools">OPA Rego • Checkov • tfsec</div>
+          <div class="node-status"><span class="badge-tag pass">COMPLIANT</span></div>
+        </div>
+
+        <div class="pipeline-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- Stage 5 -->
+        <div class="pipeline-node" data-stage="5" id="pipe-stage-5">
+          <div class="node-icon"><i class="fa-brands fa-docker"></i></div>
+          <div class="node-title">5. K8s GitOps</div>
+          <div class="node-tools">ArgoCD • Kyverno • Istio mTLS</div>
+          <div class="node-status"><span class="badge-tag pass">ZERO-TRUST</span></div>
+        </div>
+
+        <div class="pipeline-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- Stage 6 -->
+        <div class="pipeline-node" data-stage="6" id="pipe-stage-6">
+          <div class="node-icon"><i class="fa-solid fa-eye"></i></div>
+          <div class="node-title">6. Runtime eBPF</div>
+          <div class="node-tools">Falco • Cilium • Datadog / SIEM</div>
+          <div class="node-status"><span class="badge-tag live">LIVE DEFENSE</span></div>
+        </div>
+      </div>
+
+      <!-- Pipeline Telemetry Drawer -->
+      <div class="pipeline-telemetry" id="pipeline-telemetry-display">
+        <div class="telemetry-header">
+          <span class="telemetry-title" id="tel-title"><i class="fa-solid fa-satellite"></i> TELEMETRY LOG: STAGE 1 (CODE & COMMIT)</span>
+          <span class="telemetry-badge" id="tel-badge">POLICY: ENFORCED</span>
+        </div>
+        <div class="telemetry-body" id="tel-body">
+          <pre id="tel-code"><code>[INIT] Pre-commit Git Hook initialized with 14 security rules
+[SCAN] Gitleaks secret detection: 0 entropy leaks discovered.
+[LINT] Semgrep AST static code analysis: 0 High/Critical findings.
+[CHECK] Conventional commits checked: compliant with cryptographic provenance trail.
+[RESULT] Verification Complete: Commit signed with GPG key ID [0x4F8A9B2C]. Ready for CI pipeline ingestion.</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL ARSENAL SECTION -->
+    <section class="section arsenal-section" id="arsenal">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-layer-group"></i> PRODUCTION WEAPONRY</div>
+        <h2 class="section-title">Battle-Tested DevSecOps Arsenal</h2>
+        <p class="section-sub">12 years of hands-on mastery in enterprise tooling, orchestration, security frameworks, and automation.</p>
+      </div>
+
+      <div class="arsenal-grid" id="arsenal-grid">
+        <!-- Card 1: Cloud & Infrastructure -->
+        <div class="arsenal-card" data-tilt id="card-cloud">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <i class="fa-brands fa-aws card-icon cloud-icon"></i>
+            <div>
+              <h3>Cloud Architecture & IaC</h3>
+              <p>Scalable, Multi-Region Resilient Stacks</p>
+            </div>
+          </div>
+          <div class="tag-pills">
+            <span class="tag">AWS</span>
+            <span class="tag">Microsoft Azure</span>
+            <span class="tag">Google Cloud</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">OpenTofu</span>
+            <span class="tag">Terragrunt</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">Linux Hardening</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Zero-drift IaC deployments via CI/CD GitOps pipelines.</li>
+            <li>Multi-region disaster recovery with automated failover.</li>
+            <li>Cost-reduction and FinOps architecture optimization.</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Container & Kubernetes Security -->
+        <div class="arsenal-card" data-tilt id="card-k8s">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <i class="fa-solid fa-dharmachakra card-icon k8s-icon"></i>
+            <div>
+              <h3>Kubernetes & Container Defense</h3>
+              <p>Zero-Trust Multi-Tenant Topologies</p>
+            </div>
+          </div>
+          <div class="tag-pills">
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Helm</span>
+            <span class="tag">ArgoCD</span>
+            <span class="tag">Cilium (eBPF)</span>
+            <span class="tag">Falco</span>
+            <span class="tag">Istio Service Mesh</span>
+            <span class="tag">Kyverno</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Strict Pod Security Standards (PSS) & Admission Webhooks.</li>
+            <li>Mutual TLS (mTLS) zero-trust service communication.</li>
+            <li>eBPF kernel-level runtime anomaly threat prevention.</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: DevSecOps & AppSec -->
+        <div class="arsenal-card" data-tilt id="card-appsec">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <i class="fa-solid fa-shield-virus card-icon sec-icon"></i>
+            <div>
+              <h3>AppSec & Supply Chain Security</h3>
+              <p>Shift-Left Continuous Vulnerability Defense</p>
+            </div>
+          </div>
+          <div class="tag-pills">
+            <span class="tag">Snyk</span>
+            <span class="tag">SonarQube</span>
+            <span class="tag">Trivy</span>
+            <span class="tag">Checkov</span>
+            <span class="tag">HashiCorp Vault</span>
+            <span class="tag">Cosign / Sigstore</span>
+            <span class="tag">GitGuardian</span>
+            <span class="tag">OWASP ZAP</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Automated cryptographic container image signing (Cosign).</li>
+            <li>Comprehensive SBOM generation & dependency tracking.</li>
+            <li>Dynamic secret injection eliminating hardcoded credentials.</li>
+          </ul>
+        </div>
+
+        <!-- Card 4: Policy as Code & Governance -->
+        <div class="arsenal-card" data-tilt id="card-governance">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <i class="fa-solid fa-scale-balanced card-icon gov-icon"></i>
+            <div>
+              <h3>Policy as Code & Compliance</h3>
+              <p>Continuous Auditability & Risk Mitigation</p>
+            </div>
+          </div>
+          <div class="tag-pills">
+            <span class="tag">Open Policy Agent (OPA)</span>
+            <span class="tag">Rego</span>
+            <span class="tag">DefectDojo</span>
+            <span class="tag">SOC 2 Type II</span>
+            <span class="tag">ISO 27001</span>
+            <span class="tag">PCI-DSS</span>
+            <span class="tag">NIST 800-53</span>
+            <span class="tag">CIS Benchmarks</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Declarative compliance policies running as automated gates.</li>
+            <li>Real-time vulnerability aggregation into DefectDojo.</li>
+            <li>Continuous CIS benchmark auditing for cloud workloads.</li>
+          </ul>
+        </div>
+
+        <!-- Card 5: Scripting & Automation -->
+        <div class="arsenal-card" data-tilt id="card-code">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <i class="fa-solid fa-terminal card-icon code-icon"></i>
+            <div>
+              <h3>Scripting & Pipeline Automation</h3>
+              <p>Custom Tooling & High-Velocity CI/CD</p>
+            </div>
+          </div>
+          <div class="tag-pills">
+            <span class="tag">Python</span>
+            <span class="tag">Go (Golang)</span>
+            <span class="tag">Bash</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">GitLab CI</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Tekton</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Bespoke security linting and automated patching CLI tools.</li>
+            <li>Reusable GitHub Actions security workflow templates.</li>
+            <li>Self-healing deployment controllers written in Go & Python.</li>
+          </ul>
+        </div>
+
+        <!-- Card 6: Observability & SRE -->
+        <div class="arsenal-card" data-tilt id="card-obs">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <i class="fa-solid fa-chart-line card-icon obs-icon"></i>
+            <div>
+              <h3>Observability & SecOps SRE</h3>
+              <p>Unified Telemetry & Incident Mitigation</p>
+            </div>
+          </div>
+          <div class="tag-pills">
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">Datadog</span>
+            <span class="tag">Splunk</span>
+            <span class="tag">ELK Stack</span>
+            <span class="tag">Jaeger Tracing</span>
+            <span class="tag">PagerDuty</span>
+            <span class="tag">SLO / SLI</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Single-pane-of-glass security dashboard integration.</li>
+            <li>Automated alert correlation to reduce operational fatigue.</li>
+            <li>MTTR reduction through real-time distributed tracing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 YEARS EXPERIENCE TIMELINE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-history"></i> CAREER TRAJECTORY</div>
+        <h2 class="section-title">12 Years of Engineering Evolution</h2>
+        <p class="section-sub">A disciplined journey from core systems engineering to enterprise DevSecOps leadership.</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Epoch 4: Current -->
+        <div class="timeline-item">
+          <div class="timeline-dot current"></div>
+          <div class="timeline-content" data-tilt>
+            <div class="timeline-header">
+              <span class="timeline-period">2022 — PRESENT</span>
+              <span class="timeline-badge">STAFF / PRINCIPAL LEAD</span>
+            </div>
+            <h3 class="timeline-role">Lead DevSecOps Architect & Cloud Security Strategist</h3>
+            <p class="timeline-desc">
+              Spearheading organizational shift-left security strategies for 500+ microservices. Implemented SLSA Level 3 supply chain security, automated OPA Rego guardrails, and unified security observability across multi-cloud footprints.
+            </p>
+            <div class="timeline-tags">
+              <span>Zero-Trust Architecture</span>
+              <span>SLSA Level 3</span>
+              <span>eBPF Defense</span>
+              <span>FinOps & SecOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Epoch 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-tilt>
+            <div class="timeline-header">
+              <span class="timeline-period">2018 — 2022</span>
+              <span class="timeline-badge">SENIOR LEVEL</span>
+            </div>
+            <h3 class="timeline-role">Senior DevSecOps & Kubernetes Infrastructure Engineer</h3>
+            <p class="timeline-desc">
+              Architected enterprise-grade Kubernetes platforms on AWS (EKS) and Azure (AKS). Standardized CI/CD pipelines with SonarQube, Snyk, and Trivy, reducing high-severity security incidents in production by 75%.
+            </p>
+            <div class="timeline-tags">
+              <span>Kubernetes Hardening</span>
+              <span>HashiCorp Vault</span>
+              <span>ArgoCD GitOps</span>
+              <span>SOC 2 Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Epoch 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-tilt>
+            <div class="timeline-header">
+              <span class="timeline-period">2015 — 2018</span>
+              <span class="timeline-badge">MID-SENIOR</span>
+            </div>
+            <h3 class="timeline-role">Cloud DevOps & Automation Specialist</h3>
+            <p class="timeline-desc">
+              Pioneered Infrastructure as Code transition using Terraform and Ansible. Automated hybrid-cloud provisioning, centralized logging with ELK/Splunk, and containerized legacy monolithic services into Docker.
+            </p>
+            <div class="timeline-tags">
+              <span>Terraform</span>
+              <span>AWS Cloud Migration</span>
+              <span>Docker</span>
+              <span>Jenkins Pipelines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Epoch 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-tilt>
+            <div class="timeline-header">
+              <span class="timeline-period">2012 — 2015</span>
+              <span class="timeline-badge">FOUNDATIONAL</span>
+            </div>
+            <h3 class="timeline-role">Systems & Network Security Engineer</h3>
+            <p class="timeline-desc">
+              Managed Linux/Unix high-availability server clusters, network firewall architectures, intrusion detection systems (IDS/IPS), and perimeter security protocols for mission-critical client deployments.
+            </p>
+            <div class="timeline-tags">
+              <span>Linux Kernel Hardening</span>
+              <span>Networking & Firewalls</span>
+              <span>Shell Scripting</span>
+              <span>High Availability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SHOWCASE -->
+    <section class="section certs-section" id="certifications">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-award"></i> CREDENTIALS</div>
+        <h2 class="section-title">Verified Accreditations</h2>
+        <p class="section-sub">Rigorous certifications verifying cloud security, container mastery, and architecture.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-info">
+            <h4>Certified Kubernetes Security Specialist (CKS)</h4>
+            <p>CNCF • Cluster Hardening, Kernel Defense & Microservice Sec</p>
+            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon"><i class="fa-solid fa-dharmachakra"></i></div>
+          <div class="cert-info">
+            <h4>Certified Kubernetes Administrator (CKA)</h4>
+            <p>CNCF • Core K8s Architecture, Storage & Networking</p>
+            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+          <div class="cert-info">
+            <h4>AWS Certified Security – Specialty</h4>
+            <p>Amazon Web Services • IAM, KMS, Incident Response & VPC Defense</p>
+            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+          <div class="cert-info">
+            <h4>AWS Solutions Architect – Professional</h4>
+            <p>Amazon Web Services • Complex Multi-Tier Enterprise Design</p>
+            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon"><i class="fa-solid fa-cube"></i></div>
+          <div class="cert-info">
+            <h4>HashiCorp Certified: Terraform Associate</h4>
+            <p>HashiCorp • Infrastructure as Code & Modules Architecture</p>
+            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon"><i class="fa-solid fa-user-shield"></i></div>
+          <div class="cert-info">
+            <h4>Information Security & Architecture</h4>
+            <p>ISC² CISSP Curriculum Alignment • Security Governance</p>
+            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DEVSECOPS TERMINAL -->
+    <section class="section terminal-section" id="terminal-section">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-terminal"></i> INTERACTIVE CLI</div>
+        <h2 class="section-title">DevSecOps Cyber Console</h2>
+        <p class="section-sub">Execute commands in real time or select preset shortcuts to probe skills, architecture, and live audit tests.</p>
+      </div>
+
+      <div class="terminal-window" id="terminal-window">
+        <div class="terminal-titlebar">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="terminal-name">tanujchandra@devsecops-bastion:~ (tty1)</div>
+          <div class="terminal-badge"><i class="fa-solid fa-lock"></i> SSH-2.0-ZERO-TRUST</div>
+        </div>
+
+        <div class="terminal-shortcuts">
+          <button class="term-btn" data-cmd="help">help</button>
+          <button class="term-btn" data-cmd="skills">skills</button>
+          <button class="term-btn" data-cmd="experience">experience</button>
+          <button class="term-btn" data-cmd="scan">scan</button>
+          <button class="term-btn" data-cmd="pipeline">pipeline</button>
+          <button class="term-btn" data-cmd="contact">contact</button>
+          <button class="term-btn" data-cmd="clear">clear</button>
+        </div>
+
+        <div class="terminal-body" id="terminal-output">
+          <div class="term-line output-accent">╔═══════════════════════════════════════════════════════════════════════╗</div>
+          <div class="term-line output-accent">║  TANUJ CHANDRA // SENIOR DEVSECOPS SECURITY CONSOLE v4.2.0           ║</div>
+          <div class="term-line output-accent">║  12+ Years Enterprise Cloud Security & Zero-Trust Infrastructure      ║</div>
+          <div class="term-line output-accent">╚═══════════════════════════════════════════════════════════════════════╝</div>
+          <div class="term-line">System status: All defense layers operational. Type '<span class="accent-cyan">help</span>' for command index.</div>
+          <div class="term-line">&nbsp;</div>
+        </div>
+
+        <div class="terminal-input-row">
+          <span class="term-prompt">secops@tanujchandra:~$</span>
+          <input type="text" id="terminal-input" class="term-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. scan, skills, help)...">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONNECT / CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-envelope"></i> SECURE TRANSMISSION</div>
+        <h2 class="section-title">Initiate Collaboration</h2>
+        <p class="section-sub">Let's connect to discuss enterprise DevSecOps transformation, Kubernetes defense, or cloud security leadership.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info-card" data-tilt>
+          <h3>Direct Channels</h3>
+          <p>Available for advisory, senior/lead engineering roles, and open-source cloud security collaborations.</p>
+
+          <div class="channel-list">
+            <a href="https://www.linkedin.com/in/tanujchandra" target="_blank" rel="noopener noreferrer" class="channel-item">
+              <div class="channel-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="channel-details">
+                <span class="channel-name">LinkedIn Profile</span>
+                <span class="channel-value">linkedin.com/in/tanujchandra</span>
+              </div>
+            </a>
+
+            <a href="mailto:tanujchandra@gmail.com" class="channel-item">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-details">
+                <span class="channel-name">Direct Email</span>
+                <span class="channel-value">tanujchandra@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/tanujchandra" target="_blank" rel="noopener noreferrer" class="channel-item">
+              <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="channel-details">
+                <span class="channel-name">GitHub Portfolio</span>
+                <span class="channel-value">github.com/tanujchandra</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="status-box">
+            <span class="status-dot"></span>
+            <span>CURRENT STATUS: Open to Select Principal/Lead Roles & Advisory</span>
+          </div>
+        </div>
+
+        <div class="contact-form-card" data-tilt>
+          <h3>Transmission Console</h3>
+          <form id="contact-form" onsubmit="event.preventDefault(); window.location.href='mailto:tanujchandra@gmail.com?subject=' + encodeURIComponent(document.getElementById('msg-subject').value) + '&body=' + encodeURIComponent('From: ' + document.getElementById('msg-name').value + ' (' + document.getElementById('msg-email').value + ')\n\n' + document.getElementById('msg-body').value);">
+            <div class="form-group">
+              <label for="msg-name">IDENTITY / NAME</label>
+              <input type="text" id="msg-name" required placeholder="e.g. John Doe / Engineering Director">
+            </div>
+            <div class="form-group">
+              <label for="msg-email">RETURN ADDRESS / EMAIL</label>
+              <input type="email" id="msg-email" required placeholder="name@company.com">
+            </div>
+            <div class="form-group">
+              <label for="msg-subject">TOPIC</label>
+              <input type="text" id="msg-subject" required placeholder="DevSecOps Architecture Consultation / Opportunity">
+            </div>
+            <div class="form-group">
+              <label for="msg-body">PAYLOAD / MESSAGE</label>
+              <textarea id="msg-body" rows="4" required placeholder="Describe your architecture requirements or initiative..."></textarea>
+            </div>
+            <button type="submit" class="cyber-btn primary-btn submit-btn" id="send-msg-btn">
+              <i class="fa-solid fa-paper-plane"></i> DISPATCH SECURE MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER HUD -->
+  <footer class="hud-footer">
+    <div class="footer-telemetry">
+      <span><i class="fa-solid fa-shield"></i> ENCRYPTION: TLS 1.3 / CHACHA20-POLY1305</span>
+      <span><i class="fa-solid fa-server"></i> REPO: tanujchandra/tanujchandra</span>
+      <span><i class="fa-solid fa-satellite"></i> 12+ YEARS DEVSECOPS EXPERTISE</span>
+    </div>
+    <div class="footer-copy">
+      &copy; <span id="current-year">2026</span> Tanuj Chandra. Hardened with Zero-Trust & GitOps.
+    </div>
+  </footer>
+
+  <!-- Security Audit Modal Simulation -->
+  <div class="audit-modal-backdrop" id="audit-modal">
+    <div class="audit-modal-box">
+      <div class="audit-modal-header">
+        <div class="audit-modal-title"><i class="fa-solid fa-shield-virus"></i> LIVE ENTERPRISE SECURITY AUDIT SIMULATION</div>
+        <button class="audit-modal-close" id="audit-modal-close">&times;</button>
+      </div>
+      <div class="audit-modal-body">
+        <div class="audit-progress-bar">
+          <div class="audit-progress-fill" id="audit-progress-fill"></div>
+        </div>
+        <div class="audit-status-text" id="audit-status-text">INITIALIZING SCAN ENGINES...</div>
+        <div class="audit-terminal" id="audit-terminal">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+      <div class="audit-modal-footer">
+        <button class="cyber-btn primary-btn" id="audit-done-btn" style="display:none;">CLOSE REPORT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- High performance 3D libraries: local with CDN fallback -->
+  <script src="lib/three.min.js"></script>
+  <script>
+    if (!window.THREE) {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>');
+    }
+  </script>
+  <script src="lib/gsap.min.js"></script>
+  <script>
+    if (!window.gsap) {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- Main JavaScript App -->
+  <script src="app.js"></script>
+</body>
+</html>
